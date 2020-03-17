@@ -120,7 +120,7 @@ function DrawGangMenu()
 				return
 			end
 
-			TriggerServerEvent('::{korioz#0110}::gb:addGang', GangData)
+			TriggerServerEvent('gb:addGang', GangData)
 			ShowNotification('Gang créé ! (Disponible au prochain reboot)')
 		end
 	end
@@ -273,8 +273,8 @@ end)
 
 DrawGangMenu()
 
-RegisterNetEvent('::{korioz#0110}::gb:OpenMenu')
-AddEventHandler('::{korioz#0110}::gb:OpenMenu', function()
+RegisterNetEvent('gb:OpenMenu')
+AddEventHandler('gb:OpenMenu', function()
 	mainGangMenu:Visible(true)
 end)
 
@@ -286,4 +286,4 @@ RegisterCommand('gangsbuilder', function(source)
 			ESX.ShowNotification('Vous devez être ~r~Admin ~w~pour ouvrir le ~g~GangsBuilder.')
 		end
 	end)
-end,false)
+end, false)
