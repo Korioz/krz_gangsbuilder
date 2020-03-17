@@ -9,6 +9,7 @@
 
 ### Links & Support
 - **Discord Username**: Korioz#0110
+- **Example Video**: [creationgang](https://www.youtube.com/watch?v=RYuLQ6ib7fg)
 
 ### Features
 - Create Organization easily
