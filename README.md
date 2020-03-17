@@ -1,9 +1,9 @@
 # krz_gangsbuilder
 **krz_gangsbuilder** is a **GangsBuilder** for FiveM developed on top of [ESX](https://github.com/ESX-Org/es_extended) and built with [NativeUI](https://github.com/FrazzIe/NativeUILua)
 
-NOTE aux FR : En septembre 2019 j'avais créé un script pour california sous LICENSE qui permettait de créer des gangs facilement pour nous facilitez la tâche, étant en bon termes avec un Serveur (commençant par Red) nous avons décidé de leur donner le script pour les aider et c'est avec tristesse que je m'aperçois aujourd'hui que l'un des développeurs de ce Serveur a partagé mon script à mon insue un peu partout sur les discords en lien avec FiveM autant vous dire qu'actuellement tout le monde se bat pour le vendre etc à mon insue donc je préfère être clair je suis le SEUL et UNIQUE développeur de ce script et je n'hésiterais pas à me charger de toutes les personnes qui essaient de me faire une réputation de merde sur mon dos.
+NOTE aux FR : En septembre 2019 j'ai créé ce script pour california sous LICENSE qui petmet de créer des gangs facilement pour se faciliter la tâche, étant en bon termes avec un Serveur (commençant par Red) nous avons décidé de leur donner le script pour les aider et c'est avec tristesse que je m'aperçois aujourd'hui que l'un des développeurs de ce Serveur a partagé ce script à mon insue un peu partout sur les discords en lien avec FiveM autant vous dire qu'actuellement tout le monde se bat pour le vendre etc à mon insue donc je préfère être clair je suis le SEUL et UNIQUE développeur de ce script et je n'hésiterais pas à me charger de toutes les personnes qui essaient de me faire une réputation de merde sur mon dos.
 
-Suite à sa j'ai décidé de le partager à tout les Serveurs en le rendant public vu que certains essaient de le vendre et de se faire de l'argent sur mon taff'
+Suite à sa j'ai décidé de le partager à tout les Serveurs en le rendant public ici vu que certains essaient de le vendre et de se faire de l'argent sur mon taff'
 
 ### Important
 - **You are not allowed to modify the resource name**
