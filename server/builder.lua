@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
 end)
 
 function GetGangs()
-	local data = LoadResourceFile('GangsBuilder', 'data/gangData.json')
+	local data = LoadResourceFile('krz_gangsbuilder', 'data/gangData.json')
 	return data and json.decode(data) or {}
 end
 
@@ -48,7 +48,7 @@ INSERT INTO `job_grades` (`job_name`, `grade`, `name`, `label`, `salary`, `skin_
 		['@gangSociety'] = 'society_' .. data.Name
 	}, function(rowsChanged)
 		table.insert(GangsData, data)
-		SaveResourceFile('GangsBuilder', 'data/gangData.json', json.encode(GangsData))
+		SaveResourceFile('krz_gangsbuilder', 'data/gangData.json', json.encode(GangsData))
 	end)
 end)
 
