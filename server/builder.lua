@@ -19,7 +19,7 @@ function GetGang(job2)
 	return false
 end
 
-ESX.RegisterServerCallback('KorioZ-PersonalMenu:Admin_getUsergroup', function(source, cb)
+ESX.RegisterServerCallback('KorioZ-GangsBuilder:Admin_getUsergroup', function(source, cb)
 	local xPlayer = ESX.GetPlayerFromId(source)
 	local plyGroup = xPlayer.getGroup()
 
