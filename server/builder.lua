@@ -4,14 +4,6 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 GangsData = {}
 
-Citizen.CreateThread(function()
-	GangsData = GetGangs()
-
-	for i = 1, #GangsData, 1 do
-		TriggerEvent('esx_society:registerSociety', GangsData[i].Name, GangsData[i].Label, 'society_' .. GangsData[i].Name, 'society_' .. GangsData[i].Name, 'society_' .. GangsData[i].Name, {type = 'public'})
-	end
-end)
-
 function GetGangs()
 	local data = LoadResourceFile('krz_gangsbuilder', 'data/gangData.json')
 	return data and json.decode(data) or {}
@@ -26,6 +18,17 @@ function GetGang(job2)
 
 	return false
 end
+
+ESX.RegisterServerCallback('KorioZ-PersonalMenu:Admin_getUsergroup', function(source, cb)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local plyGroup = xPlayer.getGroup()
+
+	if plyGroup ~= nil then 
+		cb(plyGroup)
+	else
+		cb('user')
+	end
+end)
 
 RegisterServerEvent('gb:addGang')
 AddEventHandler('gb:addGang', function(data)
@@ -67,4 +70,12 @@ end)
 AddEventHandler('esx:setJob2', function(source, job2)
 	local plyGang = GetGang(job2)
 	TriggerClientEvent('gb:SyncGang', source, plyGang)
+end)
+
+Citizen.CreateThread(function()
+	GangsData = GetGangs()
+
+	for i = 1, #GangsData, 1 do
+		TriggerEvent('esx_society:registerSociety', GangsData[i].Name, GangsData[i].Label, 'society_' .. GangsData[i].Name, 'society_' .. GangsData[i].Name, 'society_' .. GangsData[i].Name, {type = 'public'})
+	end
 end)
