@@ -279,7 +279,7 @@ AddEventHandler('gb:OpenMenu', function()
 end)
 
 RegisterCommand('gangsbuilder', function(source)
-	ESX.TriggerServerCallback('KorioZ-PersonalMenu:Admin_getUsergroup', function(plyGroup)
+	ESX.TriggerServerCallback('KorioZ-GangsBuilder:Admin_getUsergroup', function(plyGroup)
 		if plyGroup ~= nil and (plyGroup == 'admin' or plyGroup == 'superadmin' or plyGroup == 'owner' or plyGroup == '_dev') then
 			TriggerEvent('gb:OpenMenu', source)
 		else
